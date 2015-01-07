@@ -1,0 +1,13 @@
+class String
+  define_method(:beats?) do |thing|
+    if self.==("rock") && thing.==("scissors")
+      return true
+    else
+      return false
+    end
+  end
+  define_method(:versus_computer) do
+    random = ["rock", "scissors"].sample()
+    self.beats?(random)
+  end
+end  
